@@ -4,14 +4,15 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public string ClassePerso;
+    public Color ColorSprite;
     public GameObject Player;
+    private SpriteRenderer Sprite;
     public bool GameStart = false;
-    [SerializeField] private Animator PlayerAnimator;
-    public RuntimeAnimatorController newController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Sprite = Player.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameStart)
         {
-            PlayerAnimator.runtimeAnimatorController = newController;
+            Sprite.color = ColorSprite;
             GameStart = false;
         }
     }

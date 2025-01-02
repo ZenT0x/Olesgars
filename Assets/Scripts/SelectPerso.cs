@@ -5,36 +5,36 @@ public class SelectPerso : MonoBehaviour
 {
     [SerializeField] private GameObject Canva;
     private string Classe;
+    [SerializeField] private Image image;
     public GameManager Manager;
-    private Animator animator;
 
 
     public void OnClick()
     {
-        animator = GetComponent<Animator>();
+        image = GetComponent<Image>();
 
         if (this.CompareTag("Voleur"))
         {
             Classe = "Voleur";
-            Manager.newController = animator.runtimeAnimatorController;
+            Manager.ColorSprite = image.color;
         }
 
         if (this.CompareTag("Tueur"))
         {
             Classe = "Tueur";
-            Manager.newController = animator.runtimeAnimatorController;
+            Manager.ColorSprite = image.color;
         }
 
         if (this.CompareTag("Arnaqueur"))
         {
             Classe = "Arnaqueur";
-            Manager.newController = animator.runtimeAnimatorController;
+            Manager.ColorSprite = image.color;
         }
 
         if (this.CompareTag("Chercheur"))
         {
             Classe = "Chercheur";
-            Manager.newController = animator.runtimeAnimatorController;
+            Manager.ColorSprite = image.color;
         }
 
         Manager.ClassePerso = Classe;
