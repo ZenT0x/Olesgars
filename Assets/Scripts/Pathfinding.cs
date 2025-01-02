@@ -43,9 +43,6 @@ public class Pathfinding : MonoBehaviour
     void Start()
     {
         GenerateGraph();
-
-        // Move to a destination
-        MoveTo(new Vector3(4, 4, 0));
     }
 
     void Update()
@@ -192,9 +189,13 @@ public class Pathfinding : MonoBehaviour
             transform.position = closestStartNode.position;
         }
 
-        // Snap the destination to the closest node
+        // Snap the destination to the closest node if it doesn't exist
         Node closestDestinationNode = GetClosestNode(destination);
-        if (closestDestinationNode != null)
+        if (closestDestinationNode == null)
+        {
+            destination = GetClosestNode(destination).position;
+        }
+        else
         {
             destination = closestDestinationNode.position;
         }
