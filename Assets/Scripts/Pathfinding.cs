@@ -47,6 +47,10 @@ public class Pathfinding : MonoBehaviour
 
     void Start()
     {
+        if (obstacleLayer == LayerMask.GetMask("Nothing"))
+        {
+            Debug.LogWarning("Warning: obstacleLayer is set to Nothing. Pathfinding may not work correctly.");
+        }
         GenerateGraph();
         Debug.Log("Graph generated with " + graphNodes.Count + " nodes.");
     }
