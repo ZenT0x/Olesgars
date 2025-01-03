@@ -709,11 +709,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: d4ff283d-da8b-436e-9ce2-80b266fd1e1a
+  cloudProjectId: b94401cb-d738-40bb-8e2b-fdc84ded6d33
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Olesgars
-  organizationId: unity_9dda268bc5df91b476b1
+  organizationId: topinambourg
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

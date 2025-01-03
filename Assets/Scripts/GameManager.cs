@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public bool GameStart = false;
     [SerializeField] private Animator PlayerAnimator;
     public RuntimeAnimatorController newController;
+    public bool isStop = false;
+    public bool inCombat = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

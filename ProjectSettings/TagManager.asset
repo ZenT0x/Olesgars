@@ -8,6 +8,7 @@ TagManager:
   - Tueur
   - Arnaqueur
   - Chercheur
+  - Guard
   layers:
   - Default
   - TransparentFX
@@ -45,3 +46,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default
