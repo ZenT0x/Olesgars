@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameStart)
         {
+            Player.tag = ClassePerso;
             PlayerAnimator.runtimeAnimatorController = newController;
             GameStart = false;
         }
