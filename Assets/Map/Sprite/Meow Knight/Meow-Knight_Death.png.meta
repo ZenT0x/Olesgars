@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Meow-Knight_Death_0: 3939045622467619274
+      Meow-Knight_Death_1: -4182935343695206050
+      Meow-Knight_Death_2: -3532350968771546317
+      Meow-Knight_Death_3: 2367246887049793570
+      Meow-Knight_Death_4: -5160389135657035743
+      Meow-Knight_Death_5: -3935856682090632874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
