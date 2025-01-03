@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Meow-Knight_Idle_0: 2346428892977187499
+      Meow-Knight_Idle_1: -6353061015005667862
+      Meow-Knight_Idle_2: 7197642231876940338
+      Meow-Knight_Idle_3: -908633922495034233
+      Meow-Knight_Idle_4: 7863079153137926569
+      Meow-Knight_Idle_5: -122430021104182047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

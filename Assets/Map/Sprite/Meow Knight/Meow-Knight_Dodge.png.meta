@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Meow-Knight_Dodge_0: 7973549399023850247
+      Meow-Knight_Dodge_1: -2910542726661821921
+      Meow-Knight_Dodge_2: 3325227880791611692
+      Meow-Knight_Dodge_3: -8128860970746564367
+      Meow-Knight_Dodge_4: -8209835762135974264
+      Meow-Knight_Dodge_5: 235476536634138341
+      Meow-Knight_Dodge_6: 3287668590361893003
+      Meow-Knight_Dodge_7: 6407521049876832914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
