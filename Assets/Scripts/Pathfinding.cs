@@ -16,6 +16,8 @@ public class Pathfinding : MonoBehaviour
 
     public List<Vector3> currentPath = new List<Vector3>(); // Stores the current path
 
+    private System.Collections.IEnumerator currentMovementCoroutine; // Reference to the current movement coroutine
+
     // Class to represent a node in the graph
     public class Node
     {
@@ -283,6 +285,13 @@ public class Pathfinding : MonoBehaviour
             Debug.Log("Snapped to closest start node: " + closestStartNode.position);
         }
 
+        // Interrupt the current movement if one exists
+        if (currentMovementCoroutine != null)
+        {
+            StopCoroutine(currentMovementCoroutine);
+            Debug.Log("Interrupted current movement.");
+        }
+
         // Snap the destination to the closest reachable node if it is not accessible
         List<Node> reachableNodes = GetReachableNodes(closestStartNode);
         Node closestDestinationNode = GetClosestNode(destination);
@@ -301,7 +310,8 @@ public class Pathfinding : MonoBehaviour
         if (currentPath != null)
         {
             Debug.Log("Starting path traversal.");
-            StartCoroutine(FollowPath(currentPath));
+            currentMovementCoroutine = FollowPath(currentPath);
+            StartCoroutine(currentMovementCoroutine);
         }
         else
         {
@@ -331,6 +341,7 @@ public class Pathfinding : MonoBehaviour
 
         currentPath.Clear(); // Clear path once movement is complete
         Debug.Log("Path traversal complete.");
+        currentMovementCoroutine = null; // Clear the reference to the coroutine
     }
 }
 
